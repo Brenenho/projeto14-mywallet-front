@@ -14,6 +14,12 @@ export default function HomePage() {
   const navigate = useNavigate();
 
   useEffect(() => {
+
+    if (!localStorage.getItem("token")) {
+      navigate("/");
+      return;
+    }
+    
     const config = {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
