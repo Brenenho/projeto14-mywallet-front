@@ -4,7 +4,6 @@ import HomePage from "./pages/HomePage"
 import SignInPage from "./pages/SignInPage"
 import SignUpPage from "./pages/SignUpPage"
 import TransactionsPage from "./pages/TransactionPage"
-import { useContext } from "react"
 
 export default function App() {
 
